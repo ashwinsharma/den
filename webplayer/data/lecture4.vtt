@@ -1,0 +1,700 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.400
+ Okay, fantastic. Okay guys, so we're
+
+00:00:04.400 --> 00:00:07.900
+ ready little technical difficulty here. So
+
+00:00:07.900 --> 00:00:09.300
+ for that reason, we have to
+
+00:00:09.300 --> 00:00:12.400
+ have the the middle screen, you
+
+00:00:12.400 --> 00:00:14.200
+ know to live on the on
+
+00:00:14.200 --> 00:00:16.400
+ the laptop for the duration of
+
+00:00:16.400 --> 00:00:17.700
+ the class and the two side
+
+00:00:17.700 --> 00:00:19.800
+ screens on the pad. You're okay
+
+00:00:19.800 --> 00:00:24.600
+ with that. Alright, so we have
+
+00:00:24.600 --> 00:00:27.100
+ not yet left the topic of
+
+00:00:27.100 --> 00:00:29.400
+ greedy. But you remember I mentioned
+
+00:00:29.400 --> 00:00:31.000
+ last time that for the next
+
+00:00:31.000 --> 00:00:34.100
+ couple problems that we want to
+
+00:00:34.100 --> 00:00:37.000
+ solve using the greedy method. We're
+
+00:00:37.000 --> 00:00:39.800
+ going to need some more advanced
+
+00:00:39.800 --> 00:00:42.000
+ data structures and that got us
+
+00:00:42.000 --> 00:00:45.400
+ into the discussion of priority choose
+
+00:00:45.400 --> 00:00:48.000
+ one way to implement a priority
+
+00:00:48.000 --> 00:00:49.500
+ queue we talked about last time
+
+00:00:49.500 --> 00:00:54.500
+ was binary heap right now a
+
+00:00:54.500 --> 00:00:57.400
+ priority to can be implemented using
+
+00:00:57.400 --> 00:01:00.300
+ as well. Just want to mention
+
+00:01:00.300 --> 00:01:05.500
+ those options as well. They're not
+
+00:01:05.500 --> 00:01:07.000
+ going to spend it out of
+
+00:01:07.000 --> 00:01:09.300
+ time on them. But I want
+
+00:01:09.300 --> 00:01:10.700
+ you guys to be aware of
+
+00:01:10.700 --> 00:01:12.700
+ the other types of heap that
+
+00:01:12.700 --> 00:01:16.500
+ are out there that can help
+
+00:01:16.500 --> 00:01:20.600
+ you implement a priority to And
+
+00:01:20.600 --> 00:01:21.700
+ then we're going to jump back
+
+00:01:21.700 --> 00:01:29.400
+ into greeting. So the first work.
+
+00:01:29.400 --> 00:01:31.100
+ Well, I should say the second
+
+00:01:31.100 --> 00:01:33.300
+ type of sheets that we want
+
+00:01:33.300 --> 00:01:35.200
+ to talk about is called the
+
+00:01:35.200 --> 00:01:40.400
+ binomial so binomial heaps. Are constructed
+
+00:01:40.400 --> 00:01:42.600
+ using binomial trees the same way
+
+00:01:42.600 --> 00:01:45.900
+ that a binary heap is constructed
+
+00:01:45.900 --> 00:01:50.500
+ using binary tree's binomial heap or
+
+00:01:50.500 --> 00:01:56.000
+ constructed using binomial treat. So definition
+
+00:01:56.000 --> 00:01:59.100
+ of what a binomial tree B2K
+
+00:01:59.100 --> 00:02:03.300
+ looks like so it's definition is
+
+00:02:03.300 --> 00:02:05.700
+ recursive. So so the binomial tree
+
+00:02:05.700 --> 00:02:08.400
+ B20 consist of only one note
+
+00:02:08.400 --> 00:02:12.100
+ a binomial tree bisa pakai consists
+
+00:02:12.100 --> 00:02:14.000
+ of two binomials trees piece of
+
+00:02:14.000 --> 00:02:15.600
+ K - 1 that are linked
+
+00:02:15.600 --> 00:02:17.300
+ together. So sad the root of
+
+00:02:17.300 --> 00:02:20.100
+ 1 is the leftmost child of
+
+00:02:20.100 --> 00:02:21.700
+ the roots of the other show
+
+00:02:21.700 --> 00:02:23.700
+ me Sub-Zero is going to be
+
+00:02:23.700 --> 00:02:26.500
+ just one piece of one is
+
+00:02:26.500 --> 00:02:28.100
+ going to be to be Sub-Zero's
+
+00:02:28.100 --> 00:02:29.900
+ one is the left most child
+
+00:02:29.900 --> 00:02:32.300
+ of the other piece of shoe
+
+00:02:32.300 --> 00:02:34.200
+ you see it's to be someone
+
+00:02:34.200 --> 00:02:35.500
+ this is a piece of one.
+
+00:02:35.500 --> 00:02:36.700
+ This is a piece of one.
+
+00:02:37.400 --> 00:02:39.200
+ This piece of one is the
+
+00:02:39.200 --> 00:02:41.800
+ left most child of the root
+
+00:02:41.800 --> 00:02:43.600
+ of this other piece of want
+
+00:02:43.600 --> 00:02:46.300
+ this abusive 3, which is two
+
+00:02:46.300 --> 00:02:48.300
+ piece of tooth. This is one
+
+00:02:48.300 --> 00:02:50.000
+ piece up to this is another
+
+00:02:50.000 --> 00:02:52.200
+ be safe too. And this piece
+
+00:02:52.200 --> 00:02:54.100
+ of 2 is the leftmost child
+
+00:02:54.100 --> 00:02:55.500
+ of the root of the other
+
+00:02:55.500 --> 00:02:59.800
+ piece of 2K. So goes up
+
+00:02:59.800 --> 00:03:01.700
+ like that. So you see that
+
+00:03:01.700 --> 00:03:08.000
+ final meal tree nice, okay. It
+
+00:03:08.000 --> 00:03:10.400
+ has a fixed side. So if
+
+00:03:10.400 --> 00:03:12.500
+ you wanted to build a heap
+
+00:03:12.500 --> 00:03:14.000
+ that could be of any size.
+
+00:03:15.100 --> 00:03:17.200
+ Using binomial trees. What do you
+
+00:03:17.200 --> 00:03:19.600
+ have to do? You have to
+
+00:03:19.600 --> 00:03:27.100
+ use a combination of binomial tree
+
+00:03:28.000 --> 00:03:30.500
+ So here's a is the definition
+
+00:03:30.500 --> 00:03:33.100
+ of the binomial heap. So binomial
+
+00:03:33.100 --> 00:03:36.500
+ heaps H is is a set
+
+00:03:36.500 --> 00:03:39.900
+ of binomial tree. So this is
+
+00:03:39.900 --> 00:03:43.600
+ a contract with a fine binary
+
+00:03:43.600 --> 00:03:46.400
+ ink being constructed using only a
+
+00:03:46.400 --> 00:03:50.000
+ single binary tree. So the binomial
+
+00:03:50.000 --> 00:03:54.400
+ keep could consist of a number
+
+00:03:54.400 --> 00:03:58.100
+ of binomial tree. I have the
+
+00:03:58.100 --> 00:04:01.700
+ following property each binomial tree in
+
+00:04:01.700 --> 00:04:04.500
+ h a bass d.min. heap property.
+
+00:04:04.500 --> 00:04:06.200
+ You guys remember the men he
+
+00:04:06.200 --> 00:04:08.800
+ property there the key value for
+
+00:04:08.800 --> 00:04:13.400
+ their nose. Is no larger. For
+
+00:04:13.400 --> 00:04:14.900
+ the men hip is is that
+
+00:04:14.900 --> 00:04:18.900
+ no less than the value corresponding
+
+00:04:18.900 --> 00:04:22.400
+ to the time? The other property
+
+00:04:22.400 --> 00:04:24.600
+ is that for any non-negative integer
+
+00:04:24.600 --> 00:04:28.500
+ K. There's at most one binomial
+
+00:04:28.500 --> 00:04:30.700
+ tree in h whose Roots has
+
+00:04:30.700 --> 00:04:33.000
+ degree K. So you can't you
+
+00:04:33.000 --> 00:04:35.500
+ can't have for example two piece
+
+00:04:35.500 --> 00:04:37.700
+ of to sort Ruby Civ 5
+
+00:04:37.700 --> 00:04:43.600
+ in a single binomial heap. So
+
+00:04:43.600 --> 00:04:45.700
+ here's an example of a binomial
+
+00:04:45.700 --> 00:04:53.800
+ minty of size 7. Aerosol. in
+
+00:04:53.800 --> 00:04:56.300
+ a binomial heap of size 7
+
+00:04:56.300 --> 00:04:57.500
+ you see that you have a
+
+00:04:57.500 --> 00:05:00.100
+ decent 0 you have a piece
+
+00:05:00.100 --> 00:05:01.200
+ of one and you had a
+
+00:05:01.200 --> 00:05:08.100
+ visa to so How is 7
+
+00:05:08.100 --> 00:05:17.500
+ represented in binary? It is 7
+
+00:05:17.500 --> 00:05:24.800
+ in binary is what? it's a
+
+00:05:26.800 --> 00:05:29.500
+ how many zeros do you have
+
+00:05:29.500 --> 00:05:31.500
+ there? And then you have one
+
+00:05:31.500 --> 00:05:36.700
+ one and one right? So you
+
+00:05:36.700 --> 00:05:40.000
+ can actually think of the the
+
+00:05:40.000 --> 00:05:44.100
+ binary bind up the binomial trees
+
+00:05:44.100 --> 00:05:45.800
+ that you do you end up
+
+00:05:45.800 --> 00:05:49.000
+ with in a binary binomial live
+
+00:05:49.000 --> 00:05:52.900
+ in terms of the the the
+
+00:05:52.900 --> 00:05:59.000
+ bits representing the size of of
+
+00:05:59.000 --> 00:06:01.500
+ the heap in binary. So for
+
+00:06:01.500 --> 00:06:07.100
+ example, Inapposite that left right most
+
+00:06:07.100 --> 00:06:08.900
+ position you have a one so
+
+00:06:08.900 --> 00:06:09.900
+ it means that you have a
+
+00:06:09.900 --> 00:06:12.300
+ Visa Bureau the second one you
+
+00:06:12.300 --> 00:06:15.000
+ have again. I want it means
+
+00:06:15.000 --> 00:06:16.900
+ they have a Visa and a
+
+00:06:16.900 --> 00:06:18.900
+ certain position you have a one
+
+00:06:18.900 --> 00:06:20.200
+ is being said you have a
+
+00:06:20.200 --> 00:06:23.100
+ piece of two as well right
+
+00:06:23.100 --> 00:06:26.200
+ now. What is the representation of
+
+00:06:26.200 --> 00:06:32.800
+ 8? so 8 in binary is
+
+00:06:32.800 --> 00:06:37.200
+ going to look like That's right.
+
+00:06:37.200 --> 00:06:39.000
+ So what does that mean? How
+
+00:06:39.000 --> 00:06:41.700
+ many how many binomial trees are
+
+00:06:41.700 --> 00:06:43.400
+ you going to have in a
+
+00:06:43.400 --> 00:06:48.200
+ binomial heap a size 8? this
+
+00:06:48.200 --> 00:06:51.900
+ one and that would be ABI
+
+00:06:51.900 --> 00:06:56.900
+ Saab a piece of three remember
+
+00:07:00.200 --> 00:07:03.000
+ piece of three has eight notes
+
+00:07:03.000 --> 00:07:08.100
+ exactly eight notes in it. All
+
+00:07:08.100 --> 00:07:09.600
+ right. Now as you can see
+
+00:07:09.600 --> 00:07:14.500
+ each one of these binary, I'm
+
+00:07:14.500 --> 00:07:16.000
+ sorry. Goodbye. And each one of
+
+00:07:16.000 --> 00:07:19.200
+ the binomial trees have the mini
+
+00:07:19.200 --> 00:07:23.300
+ property. But if you're trying to
+
+00:07:23.300 --> 00:07:26.700
+ find the the smallest element in
+
+00:07:26.700 --> 00:07:31.100
+ the Min Heap. Let's say this
+
+00:07:31.100 --> 00:07:33.200
+ is the head of the the
+
+00:07:33.200 --> 00:07:34.200
+ heap from this is this is
+
+00:07:34.200 --> 00:07:36.200
+ a pointer to to them in
+
+00:07:36.200 --> 00:07:40.100
+ heap. Can you just pick this
+
+00:07:40.100 --> 00:07:45.100
+ element? No, because the minimum elements
+
+00:07:45.100 --> 00:07:47.300
+ could be over here or here
+
+00:07:47.300 --> 00:07:49.800
+ or hear it could be at
+
+00:07:49.800 --> 00:07:52.300
+ one of the roots of the
+
+00:07:52.300 --> 00:07:56.300
+ binomial tree. So how long would
+
+00:07:56.300 --> 00:07:59.700
+ it take us to to go
+
+00:07:59.700 --> 00:08:02.500
+ and search through the split but
+
+00:08:02.500 --> 00:08:05.300
+ say you have an element's in
+
+00:08:05.300 --> 00:08:07.600
+ the ruthless. How long does it
+
+00:08:07.600 --> 00:08:09.400
+ take us to go in search
+
+00:08:09.400 --> 00:08:11.400
+ this ruthless and then we have
+
+00:08:11.400 --> 00:08:13.100
+ to basically go through the ruthless
+
+00:08:13.100 --> 00:08:16.900
+ linearly. So how long would it
+
+00:08:16.900 --> 00:08:23.000
+ take? if you have any elements
+
+00:08:23.000 --> 00:08:25.800
+ in the portal in the binomial,
+
+00:08:25.800 --> 00:08:29.800
+ how many routes can you have
+
+00:08:29.800 --> 00:08:35.000
+ in the in the ruthless how
+
+00:08:35.000 --> 00:08:36.200
+ many elements can you have in
+
+00:08:36.200 --> 00:08:39.900
+ the route list? Ann Arbor the
+
+00:08:39.900 --> 00:08:44.900
+ each one of these trees would
+
+00:08:44.900 --> 00:08:46.900
+ correspond to one of these bits
+
+00:08:46.900 --> 00:08:49.100
+ in a binary representation of the
+
+00:08:49.100 --> 00:08:52.000
+ size of the binomial heap. So
+
+00:08:52.000 --> 00:08:55.000
+ to represent 10 in binary, how
+
+00:08:55.000 --> 00:08:59.000
+ many bits do you need? you
+
+00:08:59.000 --> 00:09:04.300
+ need log and dip so Then
+
+00:09:04.300 --> 00:09:07.700
+ the maximum number of the trees
+
+00:09:07.700 --> 00:09:09.500
+ that you would have in the
+
+00:09:09.500 --> 00:09:11.300
+ in the ruthless is going to
+
+00:09:11.300 --> 00:09:16.300
+ be. login Do you like the
+
+00:09:16.300 --> 00:09:17.800
+ the light show that we have?
+
+00:09:19.700 --> 00:09:33.100
+ Thank you, Andrew. Do you need
+
+00:09:33.100 --> 00:09:39.800
+ a minute? Yeah, I'm do. Yeah,
+
+00:09:39.800 --> 00:09:46.500
+ sure. All right, 30 seconds. Andrew
+
+00:09:46.500 --> 00:11:18.500
+ says no pressure. You think we
+
+00:11:18.500 --> 00:11:34.000
+ are in a stable 45 seconds?
+
+00:11:42.300 --> 00:11:48.000
+ Okay, we're good. All right. Okay,
+
+00:11:48.000 --> 00:11:51.600
+ so so let's see. Alright, so
+
+00:11:51.600 --> 00:11:55.800
+ before we leave this. To find
+
+00:11:55.800 --> 00:11:59.800
+ the minimum elements so find men.
+
+00:11:59.800 --> 00:12:01.500
+ We just talked about it. It
+
+00:12:01.500 --> 00:12:05.600
+ takes a while. Lol again because
+
+00:12:05.600 --> 00:12:08.500
+ this Miss Goody login long, they
+
+00:12:08.500 --> 00:12:10.100
+ can be log and trees involved.
+
+00:12:10.100 --> 00:12:11.300
+ They have to search the root
+
+00:12:11.300 --> 00:12:15.200
+ for Soul Men. The fine men
+
+00:12:15.200 --> 00:12:17.300
+ takes login time. Remember to sign
+
+00:12:17.300 --> 00:12:19.600
+ in in a binary. He took
+
+00:12:19.600 --> 00:12:23.800
+ how long And it took us
+
+00:12:23.800 --> 00:12:25.200
+ a time because you knew exactly
+
+00:12:25.200 --> 00:12:27.100
+ where it was. It was sitting
+
+00:12:27.100 --> 00:12:29.700
+ position in the array. Okay, so
+
+00:12:29.700 --> 00:12:32.900
+ I could actually taste login time
+
+00:12:32.900 --> 00:12:35.400
+ worse case now. Let's see how
+
+00:12:35.400 --> 00:12:37.700
+ the insert operation is going to
+
+00:12:37.700 --> 00:12:40.900
+ work. So let's say I'm going
+
+00:12:40.900 --> 00:12:48.900
+ to insert. an element with with
+
+00:12:48.900 --> 00:12:51.900
+ a t value of 9 into
+
+00:12:51.900 --> 00:12:56.300
+ the seat, so Can I just
+
+00:12:56.300 --> 00:12:59.200
+ say well I'm going to add
+
+00:12:59.200 --> 00:13:00.900
+ this element 9 in The Roots
+
+00:13:00.900 --> 00:13:02.900
+ list. And the rest of it
+
+00:13:02.900 --> 00:13:05.500
+ is going to stay the same.
+
+00:13:05.500 --> 00:13:08.600
+ Well, no because what you remember
+
+00:13:08.600 --> 00:13:12.300
+ one of those constraints one of
+
+00:13:12.300 --> 00:13:15.400
+ those properties in a binomial Heap
+
+00:13:15.400 --> 00:13:17.000
+ is that you cannot have two
+
+00:13:17.000 --> 00:13:19.800
+ piece of cake so you cannot
+
+00:13:19.800 --> 00:13:21.300
+ have to be Sbarro's in that
+
+00:13:21.300 --> 00:13:22.200
+ you've liked it. So what do
+
+00:13:22.200 --> 00:13:23.700
+ you have to do you have
+
+00:13:23.700 --> 00:13:26.900
+ to merge them together? So so
+
+00:13:26.900 --> 00:13:32.000
+ which one becomes the left of
+
+00:13:32.000 --> 00:13:33.700
+ the other if this is this
+
+00:13:33.700 --> 00:13:38.800
+ is a Min he 12 becomes
+
+00:13:38.800 --> 00:13:43.200
+ the leftmost filed of 9 right
+
+00:13:43.200 --> 00:13:46.800
+ and then I'm very happy the
+
+00:13:46.800 --> 00:13:50.400
+ seven and the 10 and so
+
+00:13:50.400 --> 00:13:53.900
+ forth now, is it better to
+
+00:13:53.900 --> 00:13:57.700
+ be someone? So we have some
+
+00:13:57.700 --> 00:13:59.800
+ birds he's too which one becomes
+
+00:13:59.800 --> 00:14:02.800
+ the leftmost child. The one with
+
+00:14:02.800 --> 00:14:05.800
+ the root note having a value
+
+00:14:05.800 --> 00:14:07.700
+ of 9 G Body of night.
